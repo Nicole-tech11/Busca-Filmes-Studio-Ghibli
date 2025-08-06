@@ -1,0 +1,161 @@
+/* CSS Moderno e Tecnológico para Site de Taekwondo */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+/* Variáveis CSS */
+:root {
+  /* Cores principais */
+  --primary-red: #00BFFF;           
+  --primary-blue: #1E3A8A;          
+  --primary-white: #FFFFFF;         
+}
+body {
+  font-family: 'Rajdhani', sans-serif;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(220, 20, 60, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(30, 58, 138, 0.1) 0%, transparent 50%),
+    linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #334155 100%);
+  background-attachment: fixed;
+  color: var(--primary-white);
+  line-height: 1.6;
+  overflow-x: hidden;
+  position: relative;
+}
+h2 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 30px;
+  color: var(--primary-red);
+}
+
+label {
+  display: block;
+  margin: 10px auto;
+  font-size: 1.1rem;
+  max-width: 500px;
+}
+
+input[type="text"] {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  font-size: 1rem;
+  margin-top: 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1E293B;
+  color: var(--primary-white);
+  outline: none;
+  box-shadow: 0 0 10px rgba(30, 58, 138, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 0 12px rgba(220, 20, 60, 0.7);
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 30px;
+  font-size: 1rem;
+  background-color: var(--primary-red);
+  color: var(--primary-white);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: black;
+  color:#FFFFFF;
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.field {
+  text-align: center;
+  margin-top: 30px;
+}
+#logo{
+  max-width: 400px;
+  width: 100%;
+  border-radius: 15px;
+ box-shadow: 0 0 20px rgba(30, 58, 138, 0.4);
+  transition: transform 0.3s ease;
+  margin-left: 550px;
+}
+.poster-img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.poster-img:hover {
+  transform: scale(1.05);
+}
+textarea {
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #1E293B;
+  color: var(--primary-white);
+  border: none;
+  border-radius: 8px;
+  resize: vertical; 
+  box-shadow: 0 0 10px rgba(30, 58, 138, 0.4);
+  transition: all 0.3s ease-in-out;
+}
+
+textarea:focus {
+  box-shadow: 0 0 12px rgba(220, 20, 60, 0.7);
+}
+header {
+  height: 65px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+nav a {
+  color: var(--primary-white);
+  text-decoration: none;
+  font-weight: 100;
+  padding: 10px 20px;
+  margin: 0 0.5rem;
+  border-radius: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: var(--transition-smooth);
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+nav a:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow-red);
+  color: var(--primary-white);
+}

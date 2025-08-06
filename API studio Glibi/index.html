@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Busca Studio Ghibli</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <nav>
+    <a href="#Sobre">Sobre</a>
+    <a href="#Equipe">Equipe</a>
+    <a href="#contato">Contato</a>
+    </nav>
+</header>
+<body>
+  <h2>Busca de Filmes do Studio Ghibli</h2>
+    <p>Este site é interativo onde permite aos usuários pesquisarem filmes do renomado Studio Ghibli.</p>
+    <p>Ao digitar o nome de um filme, o sistema busca e exibe automaticamente informações como título,</p>
+    <p>descrição, diretor, data de lançamento e a imagem oficial do pôster</p>
+
+    <img id = "logo" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9XR6riqMUZoxF5HKGRwVeXz-eJmIaKmHRaVB_UbLL3PV-xEsynwGySKOTMZwJrmgS7tMevYjlBi5kophXidfvnAjkPgC1X0xsIVZIvLexEsqf1JJ0pIIFC6revrsfjrR4tipswYhLYsDVTi-x-9-pGA3UG8FAiQH3ao5GJh0NH-TRZ0pJW0GEYWTex617/s1000/Studio%20Ghibli.png" alt="logo">
+  <label><input type="text" id="filme" placeholder="Digite o Filme..." /></label>
+  <button onclick="buscar()">Buscar</button>
+
+  <p>
+    <label>Title: <input type="text" id="title" readonly /></label><br />
+    <label>Description:</label>
+    <textarea id="description" rows="5" readonly></textarea><br />
+    <label>Director: <input type="text" id="director" readonly /></label><br />
+    <label>Release date: <input type="text" id="release_date" readonly /></label>
+  </p>
+  <div class="field">
+  <label>Imagem:</label>
+  <img id="poster" src="" alt="Pôster do filme" class="poster-img">
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
